@@ -1,111 +1,123 @@
-# CloudyML-INTERNSHIP
-📌 Project Title: Predicting Graduate Admissions with Linear Regression
-👨‍💻 Internship: CloudyML – Internship Project 1
-📖 Project Overview
-This project focuses on building a Linear Regression model to predict a student's chance of admission into Ivy League universities based on academic and profile parameters. The project was part of the CloudyML internship, in collaboration with Jamboree Education, a leading test preparation company.
+# CloudyML Internship – Project 1  
+## Predicting Graduate Admissions Using Linear Regression
 
-The objective was not only to create a predictive model but also to gain actionable insights from the data through rigorous Exploratory Data Analysis (EDA) and testing of linear regression assumptions.
+## Project Overview
 
-📊 Dataset Description
-The dataset used is jamboree_admission.csv, which contains 500 entries with the following features:
+This project focuses on developing a Linear Regression model to predict a student’s probability of admission to Ivy League universities based on academic and profile-related parameters.
 
-GRE Score (out of 340)
+The project was completed as part of the CloudyML Internship in collaboration with Jamboree Education, a leading test preparation and educational consulting organization.
 
-TOEFL Score (out of 120)
+The objective of this project was to:
 
-University Rating (out of 5)
+- Build a reliable predictive model  
+- Perform comprehensive Exploratory Data Analysis (EDA)  
+- Validate linear regression assumptions  
+- Generate actionable insights for educational consulting  
 
-Statement of Purpose (SOP) strength (out of 5)
+---
 
-Letter of Recommendation (LOR) strength (out of 5)
+## Dataset Description
 
-CGPA (out of 10)
+The dataset used is `jamboree_admission.csv`, containing 500 records with the following features:
 
-Research Experience (0 = No, 1 = Yes)
+- GRE Score (out of 340)  
+- TOEFL Score (out of 120)  
+- University Rating (out of 5)  
+- Statement of Purpose (SOP) strength (out of 5)  
+- Letter of Recommendation (LOR) strength (out of 5)  
+- CGPA (out of 10)  
+- Research Experience (0 = No, 1 = Yes)  
+- Chance of Admit (Target variable: continuous value between 0 and 1)
 
-Chance of Admit (target variable: between 0 and 1)
+---
 
-🧪 Steps Followed
-✅ 1. Problem Statement & EDA
-Defined the problem statement and importance of prediction in educational consulting.
+## Methodology
 
-Checked data types, null values, duplicates, and basic statistics.
+### 1. Problem Definition and Exploratory Data Analysis
 
-Conducted univariate and bivariate analysis using plots and correlation matrix.
+- Defined the business problem and its relevance in educational consulting  
+- Performed data inspection for data types, missing values, duplicates, and descriptive statistics  
+- Conducted univariate and bivariate analysis  
+- Generated correlation matrix and visualizations  
+- Identified distributions, outliers, and feature relationships  
 
-Derived initial insights from distributions, outliers, and relationships.
+---
 
-✅ 2. Data Preprocessing
-Removed duplicate records.
+### 2. Data Preprocessing
 
-Handled any potential outliers.
+- Removed duplicate records  
+- Checked and treated outliers where necessary  
+- Confirmed absence of missing values  
+- Scaled numerical features for regression modeling  
 
-No missing values were present.
+---
 
-Scaled and prepared the data for regression.
+### 3. Model Development
 
-✅ 3. Model Building
-Built a Multiple Linear Regression model using Statsmodels.
+- Built a Multiple Linear Regression model using Statsmodels  
+- Interpreted regression coefficients and statistical significance  
+- Implemented Ridge and Lasso Regression for regularization  
+- Compared performance across models  
 
-Interpreted model coefficients and their significance.
+---
 
-Further experimented with Ridge and Lasso Regression for regularization.
+### 4. Testing Linear Regression Assumptions
 
-✅ 4. Testing Assumptions of Linear Regression
-✅ Multicollinearity: Checked using VIF, removed variables with VIF > 5.
+- **Multicollinearity**: Evaluated using Variance Inflation Factor (VIF); removed variables with VIF > 5  
+- **Zero Mean of Residuals**: Verified residual mean close to zero  
+- **Linearity**: Examined through residual vs fitted plots  
+- **Homoscedasticity**: Confirmed constant variance of residuals  
+- **Normality of Errors**: Assessed using histogram and Q-Q plot  
 
-✅ Residual Mean ≈ 0
+---
 
-✅ Linearity: Verified using residual plots
+### 5. Model Evaluation
 
-✅ Homoscedasticity: Checked constant variance of errors
+The model was evaluated using:
 
-✅ Normality: Verified through histogram and QQ plot
+- R²  
+- Adjusted R²  
+- Mean Absolute Error (MAE)  
+- Root Mean Squared Error (RMSE)  
 
-✅ 5. Model Evaluation
-Evaluated model using:
+Training and test performance were compared to detect potential overfitting.
 
-R² and Adjusted R²
+---
 
-Mean Absolute Error (MAE)
+## Key Insights
 
-Root Mean Squared Error (RMSE)
+- CGPA, GRE Score, and Research Experience were identified as the most significant predictors of admission probability.  
+- Strong academic metrics substantially increase admission chances.  
+- Inclusion of additional features such as extracurricular activities, internships, and essay evaluations could further improve model performance.  
 
-Compared training and test performance to check for overfitting.
+---
 
-✅ 6. Insights & Recommendations
-Identified most significant predictors: CGPA, GRE Score, and Research Experience.
+## Project Deliverables
 
-Suggested collecting additional data such as extracurriculars, internships, and essay scores for better prediction.
+- Jupyter Notebook (`.ipynb` / `.html`)  
+- Exploratory Data Analysis visualizations  
+- Linear, Ridge, and Lasso regression models  
+- Residual diagnostic plots  
+- Final summary report  
 
-Discussed potential implementation in student counseling and personalized study plans.
+---
 
-📁 Project Deliverables
-✅ Jupyter Notebook (.ipynb / .html)
+## Tools and Technologies
 
-✅ EDA Visualizations
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Statsmodels  
+- Scikit-learn  
+- Jupyter Notebook  
 
-✅ Linear, Ridge, and Lasso Regression Models
+---
 
-✅ Residual Diagnostic Plots
+## Author
 
-✅ Final Summary Report
-
-🔧 Tools & Technologies Used
-Python
-
-Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Statsmodels
-
-Scikit-learn
-
-Jupyter Notebook
-
-✍️ Author
-Manchit Sinha
-B.Tech, Computer Science (AI)
-Aspiring Data Analyst | CloudyML Intern
-
+Manchit Sinha  
+B.Tech, Computer Science (AI)  
+Aspiring Data Analyst  
+CloudyML Intern  
